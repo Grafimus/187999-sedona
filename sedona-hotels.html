@@ -30,27 +30,33 @@
     </header>
 <div class="content">
   <div class="filter">
+    <form action="https://345" method="GET">
     <section class="infrastructure">
       <span>Инфраструктура</span>
-      <input type="checkbox" checked>Бассейн
-      <input type="checkbox">Парковка
-      <input type="checkbox">WI-FI
+      <label><input type="checkbox" checked>Бассейн</label>
+      <label><input type="checkbox">Парковка</label>
+      <label><input type="checkbox">WI-FI</label>
     </section>
     <section class="housing">
       <span>Тип жилья</span>
-      <input type="checkbox" checked>Гостиница
-      <input type="checkbox" checked>Мотель
-      <input type="checkbox" checked>Апартаменты
+      <label><input type="checkbox" checked>Гостиница</label>
+      <label><input type="checkbox" checked>Мотель</label>
+      <label><input type="checkbox" checked>Апартаменты</label>
     </section>
     <section class="price">
       <span>Стоимость в сутки (Р):</span>
       <div class="range">
         <span>от 0</span>
         <span>до 3000</span>
-        
-        
-        <input type="submit" value="Показать">
       </div>
+        <div class="moving">
+          <img src="#">
+        </div>
+      </div>
+        <input type="submit" value="Показать">
+        </form>
+      </div>
+      
       <div class="sort">
         <h2>Найдено: 3</h2>
         <div class="type-sort">
@@ -62,41 +68,38 @@
         <button class="up"></button>
         <button class="down"></button>
       </div>
+      
       <article class="hotels">
-        <section class="item">
+        <section class="hotels-item">
           <img src="amara.jpg" width="60" height="40" alt="foto-1">
           <h2>Amara resort & SPA</h2>
           <p>Гостиница</p>
           <p>от 3500 р.</p>
           <a class="btn btn-details" href="#">Подробнее</a>
           <a class="btn btn-book" href="#">Забронировать</a>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
+          <div class="four-star"></div>
           <div class="rating">Рейтинг:8,5</div>
         </section>
-        <section class="item">
+        
+        <section class=""hotels-item"">
           <img src="desert.jpg" width="60" height="40" alt="foto-2">
           <h2>Desert quail inn</h2>
           <p>Мотель</p>
           <p>от 2000 р.</p>
           <a class="btn btn-details" href="#">Подробнее</a>
           <a class="btn btn-book" href="#">Забронировать</a>
-          <div class="star"></div>
-          <div class="star"></div>
+          <div class="two-star"></div>
           <div class="rating">Рейтинг:8,9</div>
         </section>
-        <section class="item">
+        
+        <section class=""hotels-item"">
           <img src="villas.jpg" width="60" height="40" alt="foto-3">
           <h2>Villas at poco diablo</h2>
           <p>Апартаменты</p>
           <p>от 4000 р.</p>
           <a class="btn btn-details" href="#">Подробнее</a>
           <a class="btn btn-book" href="#">Забронировать</a>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
+          <div class="three-star"></div>
           <div class="rating">Рейтинг:9,2</div>
         </section>
       </article>
