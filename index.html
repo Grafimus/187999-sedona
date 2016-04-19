@@ -2,11 +2,139 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>SEDONA</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li>
+              <a href="#">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+        <a  href="#">
+          <img src="logo.png" width="50" height="40" alt="logo">
+        </a>     
+    </header>
+<div class="main">
+  <div class="postcard">
+    <img src="intro.jpg" width="768" height="500" alt="foto-1">
+    <img src="name.png"> 
+  </div>
+  <b>Седона - небольшой городок в Аризоне, <br>
+  заслуживающий большего</b>
+  <p>Рассмотрим 5 причин, почему Седона круче, 
+    чем Гранд Каньон!</p>
+  
+    <section class="reason reason-blue">
+      <h3>Настоящий городок</h3>
+      <p>-№1-</p>
+      <p>Седона - не аттракцион для туристов.
+        Там течет своя жизнь</p>
+    </section>
+    <img src="town-1.jpg" width="520" height="300">
+  
+  <div class="features">
+    <section class="features-house">
+      <h3>Жильё</h3>
+      <p>Рекомендуем пожить в настоящем мотеле,
+        Всё как в кино!</p>
+    </section>
+    <section class="features-food">
+      <h3>Еда</h3>
+      <p>Всегда заказывайте фирменный бургер,
+        Вы не разочаруетесь!</p>
+    </section>
+    <section class="features-souvenirs">
+      <h3>Сувениры</h3>
+      <p>Не только китайского, но и местного производства!</p>
+    </section>
+  </div>
+  
+    <img src="rock-1.jpg" width="520" height="300">
+    <section class="reason reason-blue">
+      <h3>Там есть мост дьявола</h3>
+      <p>-№2-</p>
+      <p>Да, по нему можно пройти! 
+        Если конечно вы осмелитесь</p>
+    </section>
+    <section class="reason">
+      <h3>Небольшая площадь</h3>
+      <p>-№3-</p>
+      <p>Все достопримечательности находятся очень близко</p>
+    </section>
+    <section class="reason">
+      <h3>Красивая дорога</h3>
+      <p>-№4-</p>
+      <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+    </section>
+    <section class="reason">
+      <h3>Мало туристов</h3>
+      <p>-№5-</p>
+      <p>Большинство едет в Гранд Каньон и толпится там</p>
+    </section>
+    
+<h2>Заинтересовались?</h2>
+<p>Укажите предполагаемые даты поездки, 
+и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
-    <p>Этот Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<a class="form-header" href="#3">Поиск гостиницы в Седоне</a>
+<form action="https://123" method="GET">
+  <label>
+  Дата заезда:<input type="text" name="arrival">
+  </label>
+  <a class="calendar" href="#"></a>
+  <label>
+  Дата выезда:<input type="text" name="departure">
+  </label>
+  <a class="calendar" href="#"></a>
+  <div class="columns">
+    <div class="column">
+      <label>
+      Взрослые: <div class="number-field"><button type="button" class="minus">-</button>
+      <input type="text" name="adults"><button type="button" class="plus">+</button></div>
+      </label>
+    </div>
+    <div class="column">
+      <label>
+      Дети: <div class="number-field"><button type="button" class="minus">-</button>
+      <input type="text" name="kids"><button type="button" class="plus">+</button></div>
+      </label>
+    </div>
+  </div>
+  <input type="submit" value="Найти">
+</form>
 
-  </body>
+   <div class="map">
+     <img src="map.png">
+   </div>    
+</div>
+  
+
+  <footer class="main-footer">
+    <span class="visit">#VISITSEDONA</span>
+    <div class="footer-social">
+      <p>Давайте дружить!</p>
+      <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+      <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+      <a class="social-btn social-btn-yt" href="#">Ютуб</a>
+    </div>
+    <div class="footer-copyright">
+      <p>Website by</p>
+      <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+    </div>
+   </footer>
+  
+ </body>
 </html>
+     
