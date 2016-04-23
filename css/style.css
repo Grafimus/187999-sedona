@@ -47,10 +47,9 @@ h3 {
 .postcard {
     width: 100%;
     margin-bottom: 50px;
-    background: 
-    url ("img/back-foto.jpg") no-repeat 0 0,
-    url ("img/white-shape.svg") no-repeat 50% 100%,
-    url ("img/wellcome.png") no-repeat 50% 50%;
+    height: 500px;
+    background: url("../img/wellcome.png") no-repeat 0 0;
+   
 }
 
 .reason-conteyner {
@@ -142,4 +141,42 @@ h3 {
     width: 235px;
     min-height: 48px;
     display: inline-block;
+}
+
+/* hotels */
+
+.filter {
+    min-height: 214px;
+    padding: 30px 72px;
+    background-color: gray;
+    margin-bottom: 25px;
+    
+}
+
+.infrastructure, .housing {
+    width: 240px;
+    float: left;
+    margin-right: 15px;
+    min-height: 153px;
+}
+
+.price {
+    width: 328px;
+    float: right;
+    min-height: 153px;
+}
+
+.sort {
+    width: 1055px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    
+}
+
+.found, .type-sort {
+    display: inline-block;
+}
+
+.hotels-item {
+    min-height: 150px;
 }
