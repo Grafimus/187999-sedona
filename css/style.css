@@ -30,6 +30,10 @@ h3 {
     clear: both;
 }
 
+.main-container {
+    position: relative;
+}
+
 .main-header {
     min-height: 56px;
 }
@@ -115,7 +119,6 @@ h3 {
 .sedona-town p {
     line-height: 26px;
     padding: 0;
-    
 }
 
 .reason-container {
@@ -209,33 +212,86 @@ h3 {
 }
 
 .main-footer {
-    padding-top: 28px;
+    padding-top: 36px;
     padding-bottom: 36px;
     padding-left: 72px;
     padding-right: 72px;
-    
-    outline: 2px solid gray;
+    background: white;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 0;
+}
+
+.inside-page .main-footer{
+    position: static;
 }
 
 .visit {
-    width: 235px;
+    width: 177px;
     min-height: 48px;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
-    outline: 2px solid mediumseagreen;
+    padding-left: 60px;
+    padding-top: 12px;
+    vertical-align: middle;
 }
 
 .footer-social {
-    width: 400px;
+    min-width: 400px;
     min-height: 48px;
     display: inline-block;
     vertical-align: top;
     margin-left: 88px;
     margin-right: 88px;
-    outline: 2px solid mediumseagreen;
+    text-align: center;
+}
+
+.footer-social a {
+    font-size: 0;
+}
+
+.social-btn {
+    display: inline-block;
+    margin: 0 auto;
+    width: 46px;
+    height: 48px;
+    background: #81b3d2;
+    text-align: center;
+    margin: 0 2px;
+    position: relative;
+}
+
+.social-btn:hover{
+    background: #669ec0;
+}
+
+.social-btn:active{
+    background: #5496bd;
+}
+
+.social-btn::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 21px;
+    height: 19px;
+    background: url("../img/social-sprite.png") no-repeat;
+    left: 16px;
+    top: 13px;
+}
+.social-btn:active::before {
+   opacity: 0.3; 
+}
+
+.social-btn-fb::before {
+   background-position: -52px 0; 
+}
+
+.social-btn-yt::before {
+   background-position: -105px 0; 
 }
 
 .footer-copyright {
@@ -243,9 +299,27 @@ h3 {
     min-height: 48px;
     display: inline-block;
     vertical-align: top;
-    outline: 2px solid mediumseagreen;
 }
 
+.footer-copyright .btn {
+    width: 235px;
+    height: 40px;
+    display: inline-block;
+    margin-top: 2px;
+    padding-left: 6px;
+    padding-top: 10px;
+    text-decoration: none;
+    color: #000000;
+    background: url("../img/html-logo.png") no-repeat top 0 right 30px;  
+    box-sizing: border-box;
+}
+.footer-copyright .btn:hover{
+    background-position: top -48px right 30px;
+}
+
+.footer-copyright .btn:active{
+    background-position: top -95px right 30px;
+}
 .date {
     width: 565px;
     min-height: 390px;
@@ -256,9 +330,11 @@ h3 {
 /* hotels */
 
 .filter {
-    min-height: 214px;
+    min-height: 218px;
     padding: 30px 72px;
-    outline: 2px solid darkcyan;
+    background: #2a3c46 url("../img/back2.jpg") no-repeat 50% 50%;
+    color: white;
+    box-sizing: border-box;
 }
 
 .infrastructure, .housing {
@@ -280,37 +356,170 @@ h3 {
     width: 1055px;
     min-height: 87px;
     margin: 0 auto;
-    outline: 2px solid rebeccapurple;
+    position: relative;
+}
+
+.arrows {
+    position: absolute;
+    width: 36px;
+    height: 15px;
+    top: 37px;
+    right: 0;
+}
+
+.btn-up, .btn-down {
+    display: inline-block;
+    vertical-align: top;
+    width: 16px;
+    height: 14px;
+    background: url("../img/arrows.png") no-repeat;
+}
+
+.btn-up{
+    background-position: 2px 2px;
+}
+
+.btn-down {
+    background-position: 2px -24px;
+    transform: rotate(180deg);
+}
+
+.found {
+    padding-top: 33px;
+}
+
+.name-price h3 {
+    padding: 0;
+    margin: 0;
+    line-height: 21px;
+    margin-bottom: 8px;
+}
+
+.name-price h3:hover {
+    color: #81b3d2;
+}
+
+.name-price h3:active {
+    color:#cacaca;
+}
+
+.name, .min-price {
+    display: inline-block;
+    vertical-align: middle;
+    width: 110px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-right: 3px;
+}
+
+.btn-details, .btn-book {
+    display: inline-block;
+    vertical-align: middle;
+    height: 26px;
+    color: white;
+    text-decoration: none;
+    bottom: 0;
+    left: 0;
+    margin-right: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 21px;
+    padding-top: 4px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-bottom: 0px; 
+    background-color: steelblue;
+}
+
+.btn-details {
+    background: #81b3d2;
+}
+
+.btn-details:hover {
+    background: #669ec0;
+}
+
+.btn-details:active {
+    background: #5496bd;
+    color: #88b6d1;
+}
+
+.btn-book{
+    background: #766357;
+}
+
+.btn-book:hover {
+    background: #604e43;
+}
+
+.btn-book:active {
+    background: #503e33;
+    color: #857871;
 }
 
 .found, .type-sort {
     display: inline-block;
 }
 
+.hotels{
+    border-top: 1px solid #e5e5e5;
+}
+
 .hotels-item {
-    min-height: 150px;
-    outline: 2px solid darkcyan;
-    padding: 0 72px;
+    min-height: 90px;
+    padding: 30px 72px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .preview {
     width: 135px;
-    min-height: 150px;
+    height: 90px;
     float: left;
     margin-right: 30px;
-    outline: 1px solid rebeccapurple;
+    background-color: forestgreen;
 }
 
 .name-price {
     width: 363px;
-    min-height: 150px;
+    min-height: 90px;
     float: left;
-    outline: 1px solid rebeccapurple;
 }
 
 .level {
-    width: 150px;
-    min-height: 150px;
+    width: 110px;
+    min-height: 90px;
     float: right;
-    outline: 1px solid rebeccapurple;
+    position: relative;
 }
+
+.rating{
+    position: absolute;
+    bottom: 0;
+    width: 110px;
+    background: #f2f2f2;
+    color: black;
+    padding: 7px 0px;
+    text-align: center;
+}
+
+.stars{
+    position: absolute;
+    top: 0;
+    width: 110px;
+    height: 18px;
+    background: url("../img/stars.png") no-repeat;
+}
+
+.stars-four{
+    background-position: 22px;
+}
+
+.stars-tree{
+    background-position: 44px;
+}
+
+.stars-two{
+    background-position: 66px;
+}
+
