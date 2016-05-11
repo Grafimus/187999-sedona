@@ -360,7 +360,7 @@ h3 {
 }
 
 .date {
-    width: 453px;
+    width: 455px;
     min-height: 280px;
     margin: 0 auto;
     padding: 55px;
@@ -369,6 +369,9 @@ h3 {
     font-weight: bold;
     background-color: #ffffff;
     box-shadow: 0 2px 5px 1px #bdbcbc;
+    position: absolute;
+    bottom: 200px;
+    right: 318px;
     
 }
 
