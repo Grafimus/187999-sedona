@@ -24,8 +24,8 @@
             <li>
               <a href="#">Карта штата</a>
             </li>
-            <li>
-              <a class="active" href="#">Гостиницы</a>
+            <li class="active">
+              <a href="#">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -36,42 +36,45 @@
     </header>
 
     <main>
-      <div class="filter">
+      <div class="filter clearfix">
         <form action="https://777" method="GET">
-          <section class="infrastructure">
+          <section class="infrastructure checkbox-controls">
             <h4>Инфраструктура</h4>
-            <label><input type="checkbox" name="pool" checked>Бассейн</label>
-            <label><input type="checkbox" name="parking">Парковка</label>
-            <label><input type="checkbox" name="wi-fi">WI-FI</label>
+            <label><input type="checkbox" name="pool" checked><span></span>Бассейн</label>
+            <label><input type="checkbox" name="parking"><span></span>Парковка</label>
+            <label><input type="checkbox" name="wi-fi"><span></span>WI-FI</label>
           </section>
-          <section class="housing">
+          <section class="housing checkbox-controls">
             <h4>Тип жилья</h4>
-            <label><input type="checkbox" name="hotel" checked>Гостиница</label>
-            <label><input type="checkbox" name="motel" checked>Мотель</label>
-            <label><input type="checkbox" name="apartments" checked>Апартаменты</label>
+            <label><input type="checkbox" name="hotel" checked><span></span>Гостиница</label>
+            <label><input type="checkbox" name="motel" checked><span></span>Мотель</label>
+            <label><input type="checkbox" name="apartments" checked><span></span>Апартаменты</label>
           </section>
-          <section class="price">
-            <h4>Стоимость в сутки (Р):</h4>
-            <div class="range">
-              <span>от 0</span>
-              <span>до 3000</span>
+          <section class="filter-range">
+            <h4 class="filter-range-title">Стоимость в сутки (Р):</h4>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
             </div>
-            <div class="moving">
-              <img src="#">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
             </div>
-            <input type="submit" value="Показать">
+            <button class="btn-transparent" type="submit">Показать</button>
           </section>
-
         </form>
       </div>
 
       <div class="sort">
         <h3 class="found">Найдено: 3</h3>
         <div class="type-sort">
-          <span>Cортировка:</span>
-          <span class="action-sort">По цене</span>
-          <a href="#">По типу</a>
-          <a href="#">По рейтингу</a>
+          <span class="sort-item">Cортировка:</span>
+          <span class="sort-item acting">По цене</span>
+          <a class="sort-item" href="#">По типу</a>
+          <a class="sort-item" href="#">По рейтингу</a>
         </div>
         <div class="arrows">
           <a class="btn btn-up"></a>
@@ -85,7 +88,7 @@
             <img src="img/amara.jpg" width="135" height="90" alt="foto-1">
           </div>
           <div class="name-price">
-            <h3>Amara resort & SPA</h3>
+            <a class="hotels-name" href="#"><h3>Amara resort & SPA</h3></a>
             <p class="name">Гостиница</p>
             <p class="min-price">от 3500 р.</p>
             <div class="btns">
@@ -104,7 +107,7 @@
             <img src="img/desert.jpg" width="135" height="90" alt="foto-2">
           </div>
           <div class="name-price">
-            <h3>Desert quail inn</h3>
+            <a class="hotels-name" href="#"><h3>Desert quail inn</h3></a>
             <p class="name">Мотель</p>
             <p class="min-price">от 2000 р.</p>
             <div class="btns">
@@ -123,7 +126,7 @@
             <img src="img/villas.jpg" width="135" height="90" alt="foto-3">
           </div>
           <div class="name-price">
-            <h3>Villas at poco diablo</h3>
+            <a class="hotels-name" href="#"><h3>Villas at poco diablo</h3></a>
             <p class="name">Апартаменты</p>
             <p class="min-price">от 4000 р.</p>
             <div class="btns">
