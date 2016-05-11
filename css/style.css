@@ -215,7 +215,7 @@ h3 {
     background: url("../img/burger-icon.png") no-repeat 50% 23%;  
 }
 
-.features-souvenirs{
+.features-souvenirs {
     background: url("../img/present-icon.png") no-repeat 50% 23%;
 }
 
@@ -230,7 +230,7 @@ h3 {
     text-align: center;
     margin-bottom: 53px;
 }
-.interest h2{
+.interest h2 {
     padding-top: 57px;
     margin-bottom: 32px;
 }
@@ -259,7 +259,7 @@ h3 {
     bottom: 0;
 }
 
-.inside-page .main-footer{
+.inside-page .main-footer {
     position: static;
     padding-top: 32px;
 }
@@ -302,15 +302,15 @@ h3 {
     position: relative;
 }
 
-.social-btn:hover{
+.social-btn:hover {
     background: #669ec0;
 }
 
-.social-btn:active{
+.social-btn:active {
     background: #5496bd;
 }
 
-.social-btn::before{
+.social-btn::before {
     content: "";
     position: absolute;
     display: block;
@@ -351,15 +351,16 @@ h3 {
     background: url("../img/html-logo.png") no-repeat top 0 right 30px;  
     box-sizing: border-box;
 }
-.footer-copyright .btn:hover{
+
+.footer-copyright .btn:hover {
     background-position: top -48px right 30px;
 }
 
-.footer-copyright .btn:active{
+.footer-copyright .btn:active {
     background-position: top -95px right 30px;
 }
 
-.date {
+.popup-date {
     width: 455px;
     min-height: 280px;
     margin: 0 auto;
@@ -415,13 +416,13 @@ h3 {
     border: none;
 }
 
-.date .column {
+.popup-date .column {
     float: left;
     width: 50%;
     box-sizing: border-box;
 }
 
-.date .column:last-child {
+.popup-date .column:last-child {
     padding-left: 35px;
 }
 
@@ -446,6 +447,7 @@ h3 {
     border: 0;
     top: 7px;
     outline: none;
+    cursor: pointer;
 }
 
 .minus {
@@ -462,7 +464,7 @@ h3 {
     border: none;
 }
 
-.plus  {
+.plus {
     right: 7px;
     background-position: -87px 87px;
 }
@@ -483,13 +485,13 @@ h3 {
     margin-bottom: 27px;
 }
 
-.date-field:last-child{
-    margin-bottom: 40px;
+input[type="text"].second-date {
+    margin-left: 17px;
 }
 
 .calendar {
     position: absolute;
-    right: 9px;
+    right: 10px;
     top: 7px;
     width: 27px;
     height: 26px;
@@ -506,7 +508,7 @@ h3 {
     background-position: -63px -59px;
 }
 
-.date input[type="submit"] {
+.popup-date input[type="submit"] {
     width: 458px;
     height: 60px;
     color: white;
@@ -517,11 +519,11 @@ h3 {
     border: none;
 }
 
-.date input[type="submit"]:hover {
+.popup-date input[type="submit"]:hover {
     background-color: #669ec0;
 }
 
-.date input[type="submit"]:active {
+.popup-date input[type="submit"]:active {
     background-color: #5496bd;
     color: #88b6d1;
 }
@@ -686,6 +688,7 @@ h3 {
     width: 16px;
     height: 14px;
     background: url("../img/arrows.png") no-repeat;
+    cursor: pointer;
 }
 
 .btn-up {
@@ -713,7 +716,7 @@ h3 {
     padding-top: 30px;
 }
 
-.hotels-name{
+.hotels-name {
     text-decoration: none;
 }
 
@@ -775,7 +778,7 @@ h3 {
     color: #88b6d1;
 }
 
-.btn-book{
+.btn-book {
     background: #766357;
 }
 
@@ -805,7 +808,7 @@ h3 {
     display: inline-block;
 }
 
-.sort-item:first-child{
+.sort-item:first-child {
     margin-right: 39px;
 }
 
@@ -828,7 +831,7 @@ a.sort-item:active {
     border-bottom: none;
 }
 
-.hotels{
+.hotels {
     border-top: 1px solid #e5e5e5;
 }
 
@@ -859,7 +862,7 @@ a.sort-item:active {
     position: relative;
 }
 
-.rating{
+.rating {
     position: absolute;
     bottom: 0;
     width: 110px;
@@ -869,7 +872,7 @@ a.sort-item:active {
     text-align: center;
 }
 
-.stars{
+.stars {
     position: absolute;
     top: 0;
     width: 110px;
@@ -906,6 +909,7 @@ input[type="checkbox"] {
     padding-bottom: 24px;
     display: block;
     position: relative;
+    cursor: pointer;
 }
 
 input[type="checkbox"] + span {
@@ -919,6 +923,6 @@ input[type="checkbox"] + span {
     cursor: pointer;
 }
 
-input[type="checkbox"]:checked + span{
+input[type="checkbox"]:checked + span {
     background-position: 0px -29px;
 }

@@ -123,23 +123,23 @@
       </div>
     </footer>
 
-    <form class="date" action="https://123" method="GET">
+    <form class="popup-date" action="https://123" method="GET">
       <div class="date-field">
         <label>Дата заезда:<input type="text" name="arrival" value="24 апреля 2016"></label>
         <a class="calendar" href="#"></a>
       </div>
       <div class="date-field">
-        <label>Дата выезда:<input type="text" name="departure" value="4 июля 2016" ></label>
+        <label>Дата выезда:<input class="second-date" type="text" name="departure" value="4 июля 2016" ></label>
         <a class="calendar" href="#"></a>
       </div>
       <div class="columns">
         <div class="column">
           <div><label for="adults">Взрослые:</label> <span class="number-field"><button type="button" class="minus"></button>
-        <input type="text" name="adults" id="adults"><button type="button" class="plus"></button></span></div>
+        <input type="text" name="adults" id="adults" value="2"><button type="button" class="plus"></button></span></div>
         </div>
         <div class="column">
           <div><label for="kids">Дети:</label> <span class="number-field"><button type="button" class="minus"></button>
-        <input type="text" name="kids" id="kids"><button type="button" class="plus"></button></span></div>
+        <input type="text" name="kids" id="kids" value="0"><button type="button" class="plus"></button></span></div>
         </div>
       </div>
       <input type="submit" value="Найти">
