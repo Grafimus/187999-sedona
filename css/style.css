@@ -71,24 +71,24 @@ h3 {
     padding-bottom: 15px;
 }
 
-.main-navigation .active a {
-    color: #766357;
-}
-
-.main-navigation .active a:hover {
-    color: #604e43;
-}
-
-.main-navigation .active a:active {
-    color: #d6d0cc;
-}
-
 .main-navigation a:hover {
     color: #81b3d2;
 }
 
 .main-navigation a:active {
     color: #b2b2b2;
+}
+
+a.active-item {
+    color: #766357;
+}
+
+a.active-item:hover {
+    color: #604e43;
+}
+
+a.active-item:active {
+    color: #d6d0cc;
 }
 
 .main-navigation li {
@@ -122,6 +122,11 @@ h3 {
     margin-right: -70px;
 }
 
+.logo img {
+    width: 140px;
+    height: 70px;
+}
+
 .postcard {
     width: 100%;
     height: 510px;
@@ -132,10 +137,10 @@ h3 {
 
 .sedona-town {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 36px;
     padding-left: 290px;
     padding-right: 290px;
-    padding-bottom: 19px;
+    padding-bottom: 21px;
 }
 
 .small-town {
@@ -151,7 +156,7 @@ h3 {
     line-height: 26px;
     padding: 0;
     margin-top: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .reason-container {
@@ -164,8 +169,8 @@ h3 {
     float: left;
     text-align: center;
     padding-top: 49px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
     box-sizing: border-box;
     background-color: #eeeeee;
 }
@@ -174,6 +179,8 @@ h3 {
     background-color: #81b3d2;
     color: white;
     padding-top: 53px;
+    padding-left: 47px;
+    padding-right: 47px;
 }
 
 .horiz-town {
@@ -181,14 +188,18 @@ h3 {
     float: right;
 }
 
-.reason.reason-blue h3 {
+.reason h3 {
+    margin-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.reason-blue h3 {
     color: white;
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
-}
-
-.reason h3 {
+    padding-left: 77px;
+    padding-right: 78px;
     margin-bottom: 20px;
 }
 
@@ -208,6 +219,9 @@ h3 {
     width: 400px;
     min-height: 330px;
     text-align: center;
+    padding-right: 55px;
+    padding-left: 55px;
+    box-sizing: border-box;
 }
 
 .features h3 {
@@ -238,10 +252,12 @@ h3 {
     text-align: center;
     margin-bottom: 53px;
 }
+
 .interest h2 {
     padding-top: 57px;
     margin-bottom: 32px;
 }
+
 .form-header {
     width: 505px;
     display: block;
@@ -257,7 +273,7 @@ h3 {
 }
 
 .main-footer {
-    padding-top: 36px;
+    padding-top: 30px;
     padding-bottom: 36px;
     padding-left: 72px;
     padding-right: 72px;
@@ -290,6 +306,7 @@ h3 {
     min-height: 48px;
     display: inline-block;
     vertical-align: top;
+    padding-top: 5px;
     margin-left: 88px;
     margin-right: 88px;
     text-align: center;
@@ -330,15 +347,15 @@ h3 {
     top: 13px;
 }
 .social-btn:active::before {
-   opacity: 0.3; 
+    opacity: 0.3; 
 }
 
 .social-btn-fb::before {
-   background-position: -52px 0; 
+    background-position: -52px 0; 
 }
 
 .social-btn-yt::before {
-   background-position: -105px 0; 
+    background-position: -105px 0; 
 }
 
 .footer-copyright {
@@ -352,6 +369,7 @@ h3 {
     width: 235px;
     height: 40px;
     display: inline-block;
+    vertical-align: middle;
     margin-top: 2px;
     padding-left: 6px;
     padding-top: 10px;
@@ -373,7 +391,10 @@ h3 {
     width: 455px;
     min-height: 280px;
     margin: 0 auto;
-    padding: 55px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 55px;
+    padding-bottom: 58px;
     font-size: 14px;
     line-height: 35px;
     font-weight: bold;
@@ -382,7 +403,10 @@ h3 {
     position: absolute;
     bottom: 200px;
     right: 318px;
-    
+}
+
+.popup-date label {
+    line-height: 40px;
 }
 
 .date-field input[type="text"] {
@@ -403,7 +427,7 @@ h3 {
    background-color: #ebebeb; 
 }
 
-.date-field input[type="text"]:active {
+.date-field input[type="text"]:focus {
    background-color: #ffffff; 
    outline: 2px solid #e5e5e5;
 }
@@ -424,6 +448,7 @@ h3 {
     background-color: #f2f2f2;
     text-align: center;
     border: none;
+    outline: none;
 }
 
 .popup-date .column {
@@ -432,8 +457,8 @@ h3 {
     box-sizing: border-box;
 }
 
-.popup-date .column:last-child {
-    padding-left: 35px;
+.columns .column:last-child {
+    padding-left: 47px;
 }
 
 .number-field {
@@ -442,11 +467,11 @@ h3 {
     width: 116px;
     height: 39px;
     position: relative;
-    margin-left: 41px;
+    margin-left: 36px;
 }
 
-.number-field:last-child {
-    margin-left: 36px; 
+.number-field-kids {
+    margin-left: 22px; 
 }
 
 .plus, .minus {
@@ -467,11 +492,11 @@ h3 {
 }
 
 .minus:hover {
-    background-position: -62px 58px;
+    background-position: -61px 58px;
 }
 
 .minus:active {
-    background-position: -114px 58px;
+    background-position: -112px 58px;
     border: none;
 }
 
@@ -516,7 +541,7 @@ input[type="text"].second-date {
 }
 
 .calendar:active {
-    background-position: -63px -59px;
+    background-position: -62px -59px;
 }
 
 .popup-date input[type="submit"] {
@@ -528,6 +553,7 @@ input[type="text"].second-date {
     font-size: 21px;
     line-height: 26px;
     border: none;
+    outline: none;
 }
 
 .popup-date input[type="submit"]:hover {
@@ -561,11 +587,11 @@ input[type="text"].second-date {
 }
 
 .filter-range-title {
-    margin-bottom: 9px;
+    margin-bottom: 13px;
     margin-top: 0;
     font-weight: bold;
     font-size: 16px;
-    line-height: 21px;
+    line-height: 17px;
 }
 
 .price-controls {
@@ -591,6 +617,7 @@ input[type="text"].second-date {
 
 .price-controls label {
     display: inline-block;
+    vertical-align: middle;
     font-size: 14px;
     line-height: 30px;
     vertical-align: top;
@@ -851,7 +878,7 @@ a.sort-item:active {
     border-bottom: 1px solid #e5e5e5;
 }
 
-.preview {
+.preview img {
     width: 135px;
     height: 90px;
     float: left;
@@ -884,7 +911,8 @@ a.sort-item:active {
 
 .stars {
     position: absolute;
-    top: 0;
+    top: -2px;
+    right: -3px;
     width: 110px;
     height: 18px;
     background: url("../img/stars.png") no-repeat;
@@ -907,7 +935,7 @@ a.sort-item:active {
     padding: 0;
     font-size: 16px;
     line-height: 16px;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
 }
 
 input[type="checkbox"] {
@@ -922,17 +950,25 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
-input[type="checkbox"] + span {
+[type="checkbox"] + span {
     display: block;
     width: 28px;
     height: 26px;
     position: absolute;
     left: 0;
     background-image: url("../img/sprite-form.png");
-    background-position: 0px 0px;
+    background-position: -2px 0px;
     cursor: pointer;
 }
 
-input[type="checkbox"]:checked + span {
-    background-position: 0px -29px;
+[type="checkbox"]:checked + span {
+    background-position: -2px -29px;
+}
+
+[type="checkbox"]:disabled + span {
+    background-position: -34px -2px;
+}
+
+[type="checkbox"]:disabled:checked + span {
+    background-position: -34px -29px;
 }
